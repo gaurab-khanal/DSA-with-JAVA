@@ -91,6 +91,90 @@
                 }
             }
         ```
+- Switch
+    ### Syntax: 
+        switch (key) {
+            case one:
+                
+                break;
+            case two:
+                
+                break;
+        
+            default:
+                break;
+        }
+    
+    #### Note: 
+    - Duplicate case values are not allowed
+    - break is used to terminate the sequence
+    - if break is not used, it will continue to next case
+    - default will execute when none of the above does
+    - if default is not at the end, put break after it.
+    - cases have to be the same type as expressions, must be a constant or literal.
+    
+    ### Example: 
+- Normal method for switch
+        
+     
+    
+            import java.util.Scanner;
+            public class Switch {
+                public static void main(String[] args) {
+                    Scanner in = new Scanner(System.in);
+                    int dayNo = in.nextInt(); 
+            
+                    switch (dayNo) {
+                        case 1:
+                            System.out.println("Sunday");
+                            break;
+                        case 2:
+                            System.out.println("Monday");
+                            break;
+                        case 3:
+                            System.out.println("Tuesday");
+                            break;
+                        case 4:
+                            System.out.println("Wednesday");
+                            break;
+                        case 5:
+                            System.out.println("Thursday");
+                            break;
+                        case 6:
+                            System.out.println("Friday");
+                            break;
+                        case 7:
+                            System.out.println("Saturday");
+                            break;
+                        default:
+                            break;
+                    }
+            
+                }
+            }
+    
+    
+- Enhanced Method for switch(only available for java>14):
+        import java.util.Scanner;
+        public class Switch {
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+                int dayNo = in.nextInt();
+                
+                switch (dayNo){
+                    case 1 -> System.out.println("Sunday");
+                    case 2 -> System.out.println("Monday");
+                    case 3 -> System.out.println("Tuesday");
+                    case 4 -> System.out.println("Wednesday");
+                    case 5 -> System.out.println("Thursday");
+                    case 6 -> System.out.println("Friday");
+                    case 7 -> System.out.println("Saturday");
+                    default -> System.out.println("Please enter valid number");
+                }
+        
+            }
+        }
+        
 
 # Loops      
  Repetation of statements until certain certria meets is called loops.
@@ -153,4 +237,5 @@
         }
     ##### Note: While loop vs Do while loop-> do while loop execute at least one but while loop execute if condition is true.
     
+
     

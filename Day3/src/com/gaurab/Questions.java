@@ -2,43 +2,47 @@ package com.gaurab;
 
 import java.util.Scanner;
 
-public class Questions {
+public class Questions{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-//        int n = in.nextInt();
-//        System.out.println(isPrime(n));
-//        armstrong();
-        System.out.println(isArmStrong(9474));
+        int n = in.nextInt();
 
-//        for (int i = 100; i<=9999;i++){
-//            if (isArmStrong(i)){
-//                System.out.println(i);
-//            }
-//        }
-    }
-    // Print all the 3 digits armstrong numbers
-    static boolean isArmStrong(int n){
-        int original = n;
-        int sum = 0;
-        while (n>0){
-            int rem = n %10;
-            n = n/10;
-            sum = sum + rem*rem*rem;
+        // System.out.println(isPrime(n));
+       for(int i = 100;i<=10000;i++){
+        if (isArm(i)){
+            System.out.println(i);
+        }else{
+            // System.out.println("Not ArmStrong");
         }
-        return sum == original;
+       }
+
     }
-    //Check prime or not prime
-    static String isPrime(int n) {
+
+    static boolean isPrime(int n){
         if (n<=1){
-            return "Not prime";
+            return false;
         }
         int c = 2;
+
         while (c*c <=n){
             if (n%c == 0){
-                return "Not Prime";
+                return false;
             }
-            c++;
+            c++; 
         }
-        return (c * c > n) ? "Prime": "Not Prime";
+
+        return c * c> n;
+
+    }
+
+    static boolean isArm(int n){
+        int orignal = n;
+        int sum = 0;
+        while (n>0){
+            int rem = n%10;
+            sum = sum + rem*rem*rem;
+            n = n/10;
+        }
+        return sum == orignal;
     }
 }

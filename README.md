@@ -13,4 +13,8 @@ In this repo I will be documenting my DSA journey with JAVA.
     9. Unicode
 
 # Day 2: 
+    1. If-Elseif-Else condition
+    2. Switch
+    3. Enhanced Switch
+    4. Loops
 

@@ -1,4 +1,4 @@
-package com.gaurab;
+package com.gaurab.introduction;
 
 public class wrapper {
     public static void main(String[] args) {
@@ -11,17 +11,18 @@ public class wrapper {
 
          A gaurab = new A("GAurab Khanal");
         gaurab.name = "heyy";
-        System.out.println(gaurab.name);
+//        System.out.println(gaurab.name);
 
         // when a non primitive is final you cannot reassign it.
-        gaurab = new A("hiiiii");
-        System.out.println(gaurab.name);
+//        gaurab = new A("hiiiii");
+//        System.out.println(gaurab.name);
 
-        A obj;
+        A obj = new A("gaujhah");
+        System.out.println(obj);
 
-        for (int i = 0; i<100000000;i++){
-            obj = new A("Random name");
-        }
+//        for (int i = 0; i<100000000;i++){
+//            obj = new A("Random name");
+//        }
 
     }
 }

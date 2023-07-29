@@ -1,6 +1,4 @@
-package com.gaurab;
-
-import java.util.Arrays;
+package com.gaurab.introduction;
 
 public class Main {
     public static void main(String[] args) {

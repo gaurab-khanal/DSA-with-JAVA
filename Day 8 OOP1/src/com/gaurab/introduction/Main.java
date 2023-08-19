@@ -65,12 +65,14 @@ class Student{
        // internally above is new Student(12, "Ujwal", 77.99f);
    }
 
+   // copy constructor
    Student (Student other){
         this.name = other.name;
         this.roll = other.roll;
         this.marks = other.marks;
    }
 
+   // parameterised constructor
     Student(int rollno, String namee, float markss){
         this.name = namee;
         this.roll = rollno;

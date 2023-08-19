@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/DSA-with-JAVA.iml" filepath="$PROJECT_DIR$/.idea/DSA-with-JAVA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day 8 OOP1/Day 8 OOP1.iml" filepath="$PROJECT_DIR$/Day 8 OOP1/Day 8 OOP1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day1/Day1.iml" filepath="$PROJECT_DIR$/Day1/Day1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day2/Day2.iml" filepath="$PROJECT_DIR$/Day2/Day2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day3/Day3.iml" filepath="$PROJECT_DIR$/Day3/Day3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day4 Array/Day4 Array.iml" filepath="$PROJECT_DIR$/Day4 Array/Day4 Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day5 Linear Search/Day5 Linear Search.iml" filepath="$PROJECT_DIR$/Day5 Linear Search/Day5 Linear Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day6 Binary Search/Day6 Binary Search.iml" filepath="$PROJECT_DIR$/Day6 Binary Search/Day6 Binary Search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice Questions/Practice Questions.iml" filepath="$PROJECT_DIR$/Practice Questions/Practice Questions.iml" />
+    </modules>
+  </component>
+</project>

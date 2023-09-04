@@ -8,7 +8,7 @@ public class Input {
         System.out.print("Enter your roll no: ");
         int rollNo = input.nextInt();
         System.out.println("Your roll no is: "+ rollNo);
-
+        input.nextLine();
         System.out.print("Enter your name: ");
         String name = input.nextLine();
         System.out.println("Your name is "+ name);

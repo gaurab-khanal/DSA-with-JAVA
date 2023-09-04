@@ -8,7 +8,7 @@ public class TypeCasting {
 //        float num = input.nextFloat(); // Taking float
 //        System.out.println(num); // If you pass 65(int) it converts that into float automatically.
 
-//        int num = (int)(5353.63f);
+//        int num = (int)(5353.63f); // narrowing conversion
 //        System.out.println(num);
 
 //        int a = 257;

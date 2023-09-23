@@ -5,8 +5,19 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] arr = {5,4,9,2,55,77,12,98,1};
-        selectionSort(arr);
+        insertionSort(arr);
         System.out.println(Arrays.toString(arr));
+    }
+
+    static void insertionSort(int[] arr){
+        //i <=n-1
+        for (int i = 0; i<arr.length-1; i++){
+            for (int j = i+1; j>0;j--){
+                if (arr[j]<arr[j-1]){
+                    swap(arr, j,j-1);
+                }
+            }
+        }
     }
 
     static void selectionSort(int[] arr){

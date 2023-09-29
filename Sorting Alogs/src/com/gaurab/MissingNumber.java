@@ -18,9 +18,8 @@ class MissingNumber {
             if (arr[index] != index){
                 return index;
             }
-
-            return arr.length;
         }
+        return arr.length;
     }
     static void swap(int arr[], int a, int b){
         int tmp = arr[a];

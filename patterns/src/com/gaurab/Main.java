@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 //        pattern1(9);
 //        pattern2(5);
-        pattern28(5);
+        pattern31(4);
     }
     static void pattern1(int n){
         for (int row = 1;row<=n;row++){
@@ -146,6 +146,60 @@ public class Main {
         }
 
     }
+
+    static void pattern30(int n){
+        for (int row = 1;row<=n;row++){
+            int noOfSpaces = n-row;
+            for (int spaces = 1;spaces<=noOfSpaces;spaces++){
+                System.out.print(" ");
+            }
+            int noOfCol = 2*row-1;
+            for (int col = row; col>=1;col--){
+                System.out.print(col);
+            }
+            for (int col = 2; col<=row;col++){
+                System.out.print(col);
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern17(int n){
+        for (int row = 1;row<=n*2;row++){
+
+            int c = row>n?n*2-row:row;
+            for (int spaces = 1;spaces<=n-c;spaces++){
+                System.out.print("  ");
+            }
+
+            for (int col = c; col >= 1; col--) {
+                System.out.print(col + " ");
+            }
+            for (int col = 2; col <= c; col++) {
+                System.out.print(col + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern31(int n){
+        int originalN = n;
+        n = 2*n-1;
+        for (int row = 1;row<=n;row++){
+            for (int col = 1; col<=n;col++){
+                int up = row;
+                int down = n-row+1;
+                int right = n-col+1;
+                int left = col;
+                int atEveryIndex = originalN - Math.min(Math.min(up,down), Math.min(left,right)) + 1;
+                System.out.print(atEveryIndex + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
+
 
 
 }

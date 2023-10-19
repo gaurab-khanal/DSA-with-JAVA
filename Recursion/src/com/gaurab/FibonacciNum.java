@@ -2,7 +2,7 @@ package com.gaurab;
 
 public class FibonacciNum {
     public static void main(String[] args) {
-        int ans = fibonacci(4);
+        int ans = fibonacci(5);
         System.out.println(ans);
     }
     static int fibonacci(int n){

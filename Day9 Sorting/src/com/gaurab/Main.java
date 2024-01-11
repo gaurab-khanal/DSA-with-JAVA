@@ -5,15 +5,31 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] arr = {23,29,15,19,31,7,9,5,2};
+        int[] arr2 = {3,5,4,2,1};
+        cyclicSort((arr2));
+        System.out.println(Arrays.toString((arr2)));
         shellSort(arr);
         System.out.println(Arrays.toString(arr));
     }
 
+    static void cyclicSort(int[] arr){
+        int i = 0;
+        while (i< arr.length){
+            int correctIndex = arr[i] -1;
+            if (arr[i] != arr[correctIndex]){
+                swap(arr, correctIndex, i);
+            }else {
+                i++;
+            }
+         }
+    }
 
     static void shellSort(int[] arr){
         int n = arr.length;
-        for (int gap = n/2; gap>=1; gap=gap/2){
+        for (int gap = n/2; gap>=1; gap=gap/2){  // take gap = n/2 and decrease it by gap/2
+            // take index of j = gap and run it till j<n and do j++
             for (int j = gap;j<n;j++){
+                // take i = j-gap so that this index can be compared with i+ gap and swapping can be done
                 for (int i = j-gap;i>=0;i = i-gap){
                      if (arr[i+gap]> arr[i]){
                          break;

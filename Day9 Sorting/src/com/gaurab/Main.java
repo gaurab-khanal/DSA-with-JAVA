@@ -4,9 +4,26 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {5,3,4,1,-2};
-        insertionSort(arr);
+        int[] arr = {23,29,15,19,31,7,9,5,2};
+        shellSort(arr);
         System.out.println(Arrays.toString(arr));
+    }
+
+
+    static void shellSort(int[] arr){
+        int n = arr.length;
+        for (int gap = n/2; gap>=1; gap=gap/2){
+            for (int j = gap;j<n;j++){
+                for (int i = j-gap;i>=0;i = i-gap){
+                     if (arr[i+gap]> arr[i]){
+                         break;
+                     }else {
+                         swap(arr, i+gap, i);
+                     }
+                }
+            }
+
+        }
     }
 
     static void insertionSort(int[] arr){

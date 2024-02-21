@@ -1,7 +1,7 @@
 package com.gaurab;
 
 public class Shadowing {
-   static int x = 90; // this will be shadowed at line 7
+   static int x = 90; // this will be shadowed at line 11
     public static void main(String[] args) {
         int a; //declaration
         a = 5; // initiliaze

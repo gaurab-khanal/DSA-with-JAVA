@@ -1,8 +1,10 @@
 package com.gaurab;
 
 
+// it happens at compile time.
+
 // function overloading is feature that allows different function with same name but different parameters within a class.
-// each overloaded function must have different arguments or same parametera but should dffer in no of parameters passed 
+// each overloaded function must have different arguments or same parametera but should dffer in no of parameters passed
 public class OverLoading {
     public static void main(String[] args) {
         // fun("gaurab");

@@ -1,31 +1,34 @@
 package com.gaurab;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayListExample {
     public static void main(String[] args) {
+      // syntax
+        ArrayList<Integer> num = new ArrayList<>();
         Scanner in = new Scanner(System.in);
-        // Syntax
-        ArrayList<Integer> list = new ArrayList<>();
+        num.add(387);
+        num.add(38);
+        num.add(3);
+        num.add(33);
+        System.out.println(num);
+        num.set(0, 99);
+        System.out.println(num);
+        num.remove(3);
+        System.out.println(num);
 
-        list.add(89);
-        list.add(28);
-        list.add(827);
-        list.add(36);
-
-        list.set(0, 262);
-        // System.out.println(list.contains(827));
-        // System.out.println(list.contains(8));
-
-        list.remove(0);
-        // System.out.println(list);
-
-        for(int i = 0; i<5; i++){
-            list.add(in.nextInt());
+        // input
+        for (int i = 0; i<5; i++){
+            num.add(in.nextInt());
         }
-        for(int i = 0; i<5; i++){
-           System.out.println( list.get(i)); // list[index] syntax will not work here
-         }
+
+        for (int i = 0; i<num.size(); i++){
+            System.out.println(num.get(i));
+        }
     }
 }
+
+
+//

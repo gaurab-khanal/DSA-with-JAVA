@@ -13,6 +13,7 @@ public class MultiDimension {
         // 7 8 9
 
         // int[][] arr = new int[3][3];
+        // no of columns isnt mandantory to add. 1st-> row 2nd-> col
 
         // int[][] arr = {
         //     {1,2,3}, // oth index
@@ -35,7 +36,10 @@ public class MultiDimension {
         //     System.out.println(Arrays.toString(arr[row]));
         // }
 
+
+
         for(int[] a: arr){
+
             System.out.println(Arrays.toString(a));
         }
     }    

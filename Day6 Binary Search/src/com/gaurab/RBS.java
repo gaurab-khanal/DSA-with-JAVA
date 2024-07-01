@@ -86,16 +86,16 @@ public class RBS {
 
             if(arr[mid] == arr[start] && arr[mid] == arr[end]){
                 // skip the duplicates
-                // what is these alements at start and end were the pivot??
+                // what if these elements at start and end were the pivot??
                 // check if start is pivot
-                if (arr[start]>arr[start + 1]){
+                if (start < (arr.length-1) && arr[start]>arr[start + 1]){
                     return start;
                 }
                 start++;
 
                 // check whether end is pivot or not
-                if(arr[end] < arr[end-1]){
-                    return end;
+                if(end >0 &&  arr[end] < arr[end-1]){
+                    return end-1;
                 }
                 end--;
             }

@@ -3,7 +3,7 @@ package com.gaurab;
 public class Floor {
     public static void main(String[] args) {
         int[] arr = {2,3,5,9,14,16,18};
-        int ans = binarySearch(arr, 15);
+        int ans = binarySearch(arr, 19);
         System.out.println(ans);
     }
 
@@ -59,7 +59,7 @@ public class Floor {
             // int mid = (start + end)/2; // might be possibe that (start + end) exceed the range of integer in java
             // if target element is less than the smallest element in array
             if(target>arr[arr.length-1]){
-                return -1;
+                return arr.length-1;
             }
             int mid = start + (end - start)/2;
 

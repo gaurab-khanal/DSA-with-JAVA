@@ -16,6 +16,7 @@ public class SearchIn2dArray {
         System.out.println(max(arr));
     }
 
+
     static int[] search(int[][] arr, int target){
         for (int row = 0; row < arr.length; row++){
 

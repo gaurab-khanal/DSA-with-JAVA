@@ -1,8 +1,14 @@
+import java.util.Arrays;
+
 public class FirstAndLastElement {
     public static void main(String[] args) {
+        int[] arr = {5,7,7,7,7,8,8,10};
+        int[] ans = new int[2];
+        ans = searchRange(arr, 7);
+        System.out.println(Arrays.toString(ans));
 
     }
-    public int[] searchRange(int[] nums, int target) {
+    public static int[] searchRange(int[] nums, int target) {
 
         int[] ans = {-1,-1};
 
@@ -17,7 +23,7 @@ public class FirstAndLastElement {
     }
     //this function just return the index value of target
 
-    int search(int[] nums, int target, boolean findStartIndex){
+    public  static int search(int[] nums, int target, boolean findStartIndex){
         //potential ans
         int ans = -1;
         //check for first occurence of target first

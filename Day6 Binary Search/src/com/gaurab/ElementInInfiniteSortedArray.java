@@ -18,7 +18,7 @@ public class ElementInInfiniteSortedArray {
         while(target>arr[end]){
             int newStart = end+1;
             // double the box value
-            // end = previousEnd + sizeOfBox * 2
+             // end = previousEnd + sizeOfBox * 2
             end = end + (end-start+1) * 2;
             start = newStart;
         }

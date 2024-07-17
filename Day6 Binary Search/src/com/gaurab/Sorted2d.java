@@ -4,12 +4,11 @@ import java.util.Arrays;
 public class Sorted2d {
     public static void main(String[] args) {
         int[][] arr = {
-                {1,2,3,4},
-                {5,6,7,8},
-                {9,10,11,12},
-                {13,14,15,16}
+                {1,3,5,7},
+                {10,11,16,20},
+                {23,30,34,50},
         };
-        int target = 17;
+        int target = 7;
 
         int[] ans = search(arr, target);
         System.out.println(Arrays.toString(ans));

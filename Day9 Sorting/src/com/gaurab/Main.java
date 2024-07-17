@@ -7,7 +7,7 @@ public class Main {
         int[] arr = {5,4,3,2,1};
 
         int e = arr.length;
-        mergeSortInplace(arr, 0, e);
+        insertionSort(arr);
 
 
         System.out.println(Arrays.toString(arr));
@@ -151,12 +151,11 @@ public class Main {
     }
 
     static void selectionSort(int[] arr){
-        for (int i = 0; i< arr.length;i++){
-            //find the max item index in the array and swap with correct index;
-            int lastIndex = arr.length -1-i;
-            int maxIndex = getMaxIndex(arr, 0, lastIndex);
-            swap(arr, maxIndex, lastIndex);
-        }
+       for (int i = 0; i<arr.length; i++){
+           int lastIndex = arr.length -i-1;
+           int maxIndex = getMaxIndex(arr, 0, lastIndex);
+           swap(arr, lastIndex, maxIndex );
+       }
     }
 
     static void swap(int[] arr, int first, int second){

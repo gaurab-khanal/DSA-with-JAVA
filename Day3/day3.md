@@ -5,7 +5,7 @@
  - Without function: Program to find the sum of two numbers: 
         import java.util.Scanner;
 
-        public class com.gaurab.Main {
+        public class com.gaurab.com.gaurab.Main {
             public static void main(String[] args) {
                 // Take input of two number and print the sum
                 Scanner in = new Scanner(System.in);

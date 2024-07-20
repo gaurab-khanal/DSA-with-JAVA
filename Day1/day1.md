@@ -3,7 +3,7 @@
 ``` 
     import java.util.Scanner;
 
-    public class com.gaurab.Main{
+    public class com.gaurab.com.gaurab.Main{
     public static void main(String[] args) {
         System.out.println("Hello World!");
         Scanner input = new Scanner(System.in);
@@ -11,12 +11,12 @@
     }
 }
 ```
-- public --> It means this class 'com.gaurab.Main' can be accessed from anywhere.
+- public --> It means this class 'com.gaurab.com.gaurab.Main' can be accessed from anywhere.
 - class  --> Name group of properties or functions.
-- com.gaurab.Main   --> Name of file.                 Note: public class name must be same as the file name which is 'com.gaurab.Main' in this case.
+- com.gaurab.com.gaurab.Main   --> Name of file.                 Note: public class name must be same as the file name which is 'com.gaurab.com.gaurab.Main' in this case.
 - public --> makes 'main' function public(accissible by 
 all file).
-- static --> runs 'main' function without creating the                 the object of class 'com.gaurab.Main'.
+- static --> runs 'main' function without creating the                 the object of class 'com.gaurab.com.gaurab.Main'.
 - void   --> return type of function. It doesnot return any value.
 - main   --> It is reserved word. The function name                 must be main. If not program will not run. When you run the java file it will look for the 'main' function in it. If not available program will not run. 'main' is the starting point of the program.
 - String[] (args) --> command line argument. Array,collection of string.

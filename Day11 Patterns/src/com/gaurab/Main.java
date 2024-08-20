@@ -7,9 +7,22 @@ public class Main {
 //        pattern5(9);
 //        pattern5(5);
 //        pattern28(5);
-        pattern17(4);
+//        pattern17(4);
+        pattern31(4);
     }
 
+    static void pattern31(int n){
+        int originalN = n;
+        n = 2*n;
+        for (int row = 0; row <=n ; row++) {
+            int print = row>n ? row-n :  n-row;
+            for (int col = 0; col <=n ; col++) {
+                int atEveryIndex = originalN -  Math.min(Math.min(row,col), Math.min(n-col, n-row));
+                    System.out.print(atEveryIndex + " ");
+            }
+            System.out.println();
+        }
+    }
     static void pattern17(int n){
         for (int row = 1; row <= 2* n; row++) {
             int c = row > n ? 2*n -row : row;
